@@ -16,6 +16,8 @@ export default {
 		html_content += "<p> RegionCode: " + request.cf.regionCode + "</p>";
 		html_content += "<p> Timezone: " + request.cf.timezone + "</p>";
 		html_content += "<p> ASN: " + request.cf.asn + "</p>";
+		html_content += "<p> ASN_Org: " + request.cf.asOrganization + "</p>";
+		html_content += "<p> IP: " +request.headers.get('CF-Connecting-IP') + "</p>";
 
 		let html = `<!DOCTYPE html>
       <head>
