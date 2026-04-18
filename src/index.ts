@@ -21,7 +21,7 @@ export default {
 		html_content += "<p> User_Agent: " +request.headers.get("User-Agent") + "</p>";
 		html_content += "<p> Referer: " +request.headers.get("Referer") + "</p>";
 		html_content += "<p> From: " +request.headers.get("From") + "</p>";
-		html_content += "<p> Width: " +request.headers.get("Viewport-Width") + "</p>";
+		html_content += "<p> Accept: " +request.headers.get("Accept") + "</p>";
 	
 
 		let html = `<!DOCTYPE html>
