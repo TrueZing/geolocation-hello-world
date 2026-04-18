@@ -20,6 +20,7 @@ export default {
 		html_content += "<p> IP: " +request.headers.get('CF-Connecting-IP') + "</p>";
 		html_content += "<p> User_Agent: " +request.headers.get("User-Agent") + "</p>";
 		html_content += "<p> Referer: " +request.headers.get("Referer") + "</p>";
+		html_content += "<p> From: " +request.headers.get("From") + "</p>";
 	
 
 		let html = `<!DOCTYPE html>
